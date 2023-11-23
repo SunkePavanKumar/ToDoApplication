@@ -1,0 +1,63 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.todo-form button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-list span {
+  margin: 10px;
+  padding: 10px;
+}
+
+.todo-list button {
+  margin-right: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+#complete {
+  background-color: blue;
+}
+
+#delete {
+  background-color: red;
+}
