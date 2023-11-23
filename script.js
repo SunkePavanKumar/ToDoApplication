@@ -12,8 +12,10 @@ function addTask() {
     taskElement.className = "task";
     taskElement.innerHTML = `
             <span>${taskText}</span>
-            <button id="complete" onClick="completeTask(this)">Complete</button>
-            <button id="delete" onclick="removeTask(this)">Delete</button>
+            <div>
+                <button id="complete" onClick="completeTask(this)">Complete</button>
+                <button id="delete" onclick="removeTask(this)">Delete</button>
+            </div>
         `;
 
     // Append the task element to the task list
@@ -26,13 +28,13 @@ function addTask() {
 
 // Function to remove a task
 function removeTask(button) {
-  const taskElement = button.parentElement;
+  const taskElement = button.parentElement.parentElement;
   taskList.removeChild(taskElement);
 }
 
 // Function to mark a task as complete
 function completeTask(button) {
-  const taskElement = button.parentElement;
+  const taskElement = button.parentElement.parentElement;
   const taskTextElement = taskElement.querySelector("span");
 
   // Toggle the strikethrough style

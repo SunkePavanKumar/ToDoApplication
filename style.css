@@ -61,3 +61,9 @@ header {
 #delete {
   background-color: red;
 }
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
